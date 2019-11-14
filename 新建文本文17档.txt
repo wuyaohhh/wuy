@@ -1,0 +1,33 @@
+
+public class Animal {
+private String name;
+private int numoflegs;
+public Animal (){
+	name=null;
+	numoflegs=0;
+	System.out.println();
+}
+public Animal (String name,int numoflegs){
+	name=null;
+	numoflegs=0;
+	System.out.println();
+}
+public String getter1() {
+return name;
+}
+public int getter2(){
+return numoflegs;	
+}
+public void setter(String name,int numoflegs) {
+this.name = name;
+this.numoflegs=numoflegs;
+}
+public static void main(String[] args){
+	String x;
+	Animal asd=new Animal();
+	asd.setter("sh", 2);
+	x=asd.getter1();
+	System.out.println(x);
+	System.out.println(asd.getter2());
+}
+}
